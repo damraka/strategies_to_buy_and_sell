@@ -29,7 +29,7 @@ This backtesting suite, which was designed with flexibility in mind, allows both
     Visual Analytics
     Supports data-driven insights and model diagnostics by offering clear, educational plots that show both price action and trading signals.
 
-# ⚙️ Installation
+⚙️ Installation
 
 Ensure that Python 3.7 or higher is installed. Use a virtual environment.
 Install required packages via:
@@ -56,7 +56,7 @@ The script outputs:
 
     Visualizations of equity curves and strategy signals
 
-# 🗂️ Project Structure
+🗂️ Project Structure
 
 ├── strategies/          # Contains trading strategy logic
 ├── metrics/             # Performance metric calculations
