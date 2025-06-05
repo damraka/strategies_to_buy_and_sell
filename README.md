@@ -1,49 +1,83 @@
-# Strategy Backtester
-Overview
+📈 Strategy Backtester
+🧠 Overview
 
-This project is designed to provide a robust framework for evaluating trading strategies using historical market data. It leverages a mean reversion strategy as a demonstrative example to illustrate how systematic trading models can be tested, analyzed, and visualized with clarity and precision.
+Using historical market data, this project provides a thorough and modular framework for assessing trading strategies. It includes a functional mean reversion strategy implementation, demonstrating the transparent and rigorous testing, evaluation, and visualization of systematic models.
 
-The backtesting engine supports signal generation, portfolio performance computation, and detailed metrics reporting to empower informed decision-making for traders and analysts.
-Features
+This backtesting suite, which was designed with flexibility in mind, allows both quantitative researchers and discretionary traders to investigate and refine algorithmic strategies through reliable simulation and performance monitoring.
+🚀 Features
 
-    Mean Reversion Strategy Implementation: Demonstrates a practical example of a classical trading strategy based on statistical price behavior.
+    Implementation of the Mean Reversion Strategy
+    An actual implementation of a tried-and-true method based on statistical hypotheses regarding price movements.
 
-    Backtesting Engine: Executes the strategy against historical price data, simulating trades and calculating returns.
+    Engine for Backtesting
+    accurately calculates position changes and portfolio returns by simulating the execution of trading signals against historical price data.
 
-    Performance Metrics: Computes key quantitative measures including cumulative returns, volatility, Sharpe ratio, and drawdowns for comprehensive evaluation.
+    Metrics of Performance
+    produces important KPIs like:
 
-    Visual Analytics: Generates clear and informative plots of strategy performance and asset price with trading signals for intuitive insight.
+        Cumulative returns
 
-Installation
+        Volatility
 
-Ensure you have Python 3.7+ installed. It is recommended to use a virtual environment. Install dependencies via:
+        Sharpe ratio
 
-pip install -r requirements.txt  
+        Maximum drawdown
 
-Usage
+        Win/loss ratios
+        for in-depth strategy evaluation.
 
-Place your historical price data CSV in the data/ directory with columns including Date and Close. Execute the main script to run the backtest and view results:
+    Visual Analytics
+    Supports data-driven insights and model diagnostics by offering clear, educational plots that show both price action and trading signals.
 
-python main.py  
+⚙️ Installation
 
-The script outputs cumulative strategy returns, benchmark buy & hold returns, and detailed metrics to the console. Visualizations appear sequentially for focused review.
-Project Structure
+Ensure that Python 3.7 or higher is installed. Use a virtual environment.
+Install required packages via:
 
-    strategies/ — Contains trading strategy implementations.
+pip install -r requirements.txt
 
-    backtest_engine.py — Core backtesting logic combining data and strategy signals.
+📊 Usage
 
-    metrics/ — Functions to calculate quantitative performance statistics.
+Place your historical price data (.csv format) in the data/ directory. The file should include the following columns:
 
-    visuals/ — Plotting utilities for strategy and price visualization.
+    Date
 
-    data/ — Historical price data input files.
+    Close
 
-    main.py — Entry point to run the complete backtesting workflow.
+To run the backtest and generate reports, execute:
 
-Contributing
+python main.py
 
-Contributions are welcome. Please ensure code quality and testing standards are met before submitting pull requests.
-License
+The script outputs:
 
-This project is licensed under the MIT License.
+    Final strategy return vs. buy & hold benchmark
+
+    Detailed performance metrics
+
+    Visualizations of equity curves and strategy signals
+
+🗂️ Project Structure
+
+├── strategies/          # Contains trading strategy logic
+├── metrics/             # Performance metric calculations
+├── visuals/             # Plotting tools for charts and analytics
+├── data/                # Input historical price data
+├── backtest_engine.py   # Core backtesting logic
+├── main.py              # Entry point to run backtest
+└── requirements.txt     # Python dependencies
+
+🤝 Contributing
+
+We welcome contributions. Please:
+
+    Follow existing code structure and style
+
+    Write clear, maintainable code
+
+    Include relevant test cases and documentation
+
+    Submit pull requests with a brief description of changes
+
+📬 Contact
+
+For suggestions, questions, or collaboration inquiries, feel free to open an issue or submit a pull request.
