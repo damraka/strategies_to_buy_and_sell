@@ -1,5 +1,5 @@
-📈 Strategy Backtester
-🧠 Overview
+## 📈 Strategy Backtester
+# 🧠 Overview
 
 Using historical market data, this project provides a thorough and modular framework for assessing trading strategies. It includes a functional mean reversion strategy implementation, demonstrating the transparent and rigorous testing, evaluation, and visualization of systematic models.
 
@@ -29,7 +29,7 @@ This backtesting suite, which was designed with flexibility in mind, allows both
     Visual Analytics
     Supports data-driven insights and model diagnostics by offering clear, educational plots that show both price action and trading signals.
 
-⚙️ Installation
+# ⚙️ Installation
 
 Ensure that Python 3.7 or higher is installed. Use a virtual environment.
 Install required packages via:
@@ -56,7 +56,7 @@ The script outputs:
 
     Visualizations of equity curves and strategy signals
 
-🗂️ Project Structure
+# 🗂️ Project Structure
 
 ├── strategies/          # Contains trading strategy logic
 ├── metrics/             # Performance metric calculations
@@ -66,7 +66,7 @@ The script outputs:
 ├── main.py              # Entry point to run backtest
 └── requirements.txt     # Python dependencies
 
-🤝 Contributing
+# 🤝 Contributing
 
 We welcome contributions. Please:
 
@@ -78,6 +78,6 @@ We welcome contributions. Please:
 
     Submit pull requests with a brief description of changes
 
-📬 Contact
+# 📬 Contact
 
 For suggestions, questions, or collaboration inquiries, feel free to open an issue or submit a pull request.
