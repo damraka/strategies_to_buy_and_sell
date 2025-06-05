@@ -28,7 +28,7 @@ def main():
 
     mean_reversion = MeanReversionStrategy(df, window=20, threshold=0.02)
     signals = mean_reversion.generate_signals()
-    signals = signals.to_frame(name='Position')  # <<< THIS IS THE GOLD
+    signals = signals.to_frame(name='Position')
 
     backtester = BacktestEngine(df, mean_reversion)
     results = backtester.run_backtest()

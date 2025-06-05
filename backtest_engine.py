@@ -1,5 +1,5 @@
+import os
 import pandas as pd
-
 class BacktestEngine:
     def __init__(self, data, strategy):
         self.data = data.copy()
@@ -14,5 +14,10 @@ class BacktestEngine:
         self.data['Cumulative_Strategy_Returns'] = (1 + self.data['Strategy_Returns']).cumprod() - 1
         self.data['Cumulative_BuyHold_Returns'] = (1 + self.data['Returns']).cumprod() - 1
         self.results = self.data
-        return self.results
 
+        if not os.path.exists('results'):
+            os.makedirs('results')
+
+        self.results.to_csv('results/backtest_results.csv')
+
+        return self.results
